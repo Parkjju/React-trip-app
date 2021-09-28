@@ -1,18 +1,18 @@
 import axios from 'axios';
 axios
-  .get('https://5b454fe7-e619-4f04-88e2-fd600d083186.mock.pstmn.io/location')
-  .then(Response => {
-    console.log(Response.data);
+  .get(process.env.REACT_APP_MOCK_SERVER)
+  .then(response => {
+    console.log(response.data);
   })
-  .catch(Error => {
-    console.log(Error);
+  .catch(error => {
+    console.log(error);
   });
 
 axios
-  .get('https://5b454fe7-e619-4f04-88e2-fd600d083186.mock.pstmn.io/travel/1')
-  .then(Response => {
-    console.log(Response.data);
+  .get(process.env.REACT_APP_MOCK_SERVER)
+  .then(response => {
+    console.log(response.data);
   })
-  .catch(Error => {
-    console.log(Error);
+  .catch(error => {
+    console.log(error);
   });
